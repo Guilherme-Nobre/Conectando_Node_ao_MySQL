@@ -1,0 +1,21 @@
+<h1>Usuarios cadastrados</h1>
+<div>
+    {{#each usuarios}}
+    <p>-------------------------------------------------------------------</p>
+    <div>
+        <p>Nome: {{this.nome}}</p>
+    </div>
+    <div>
+        <p>Email: {{this.email}}</p>
+    </div>
+    <div>
+        <p>Telefone: {{this.fone}}</p>
+    </div>
+    <div>
+        <p>Data de Nascimento: {{this.data_nascimento}}</p>
+    </div>
+    <div>
+        <a href="/usuario/{{this.id}}">Detalhes</a>
+    </div>
+    {{/each}}
+</div>

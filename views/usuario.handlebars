@@ -1,0 +1,22 @@
+<h1>Usuarios cadastrados</h1>
+<a href="/usuarios">Voltar</a>
+<div>
+    <div>
+        <p>Nome: {{usuario.nome}}</p>
+    </div>
+    <div>
+        <p>Email: {{usuario.email}}</p>
+    </div>
+    <div>
+        <p>Telefone: {{usuario.fone}}</p>
+    </div>
+    <div>
+        <p>Data de Nascimento: {{usuario.data_nascimento}}</p>
+    </div>
+    <div>
+        <a href="/usuarios/edit/{{usuario.id}}">Editar</a>
+        <form method="post" action="/usuarios/delete/{{usuario.id}}" method="post">
+            <input type="submit" value="Excluir">
+        </form>
+    </div>
+</div>
